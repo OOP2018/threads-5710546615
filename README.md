@@ -31,7 +31,6 @@ The threads use the counter to add and subtract values.
 | #3                      | 1,000              | 5719            | 0.001115        |
 | #4                      | 1,000              | 0               | 0.000702        |
 | #5                      | 1,000              | -17017          | 0.000537        |
-|:------------------------|:-------------------|-----------------|-----------------|
 | Average                 | 1,000              | -5649           | 0.000738        |
 
 | Number of run           | Limit              | total (counter) | Runtime (sec)   |
@@ -41,7 +40,6 @@ The threads use the counter to add and subtract values.
 | #3                      | 10,000,000         | -49739124259513 | 0.016983        |
 | #4                      | 10,000,000         | -49913425329782 | 0.019457        |
 | #5                      | 10,000,000         | 35158416018163  | 0.022098        |
-|:------------------------|:-------------------|-----------------|-----------------|
 | Average                 | 10,000,000         | -2979744225675  | 0.018105        |
 
 1.3) Explain the results. Why is the counter total sometimes not zero? Why is it not the same each time?
@@ -68,7 +66,6 @@ B : Adding 100 THB to account   --- Balance = 200 THB (add amount to balance tha
 | #3                      | 10,000,000         | 0               | 0.889418        |
 | #4                      | 10,000,000         | 0               | 0.845900        |
 | #5                      | 10,000,000         | 0               | 0.894141        |
-|:------------------------|:-------------------|-----------------|-----------------|
 | Average                 | 10,000,000         | 0               | 0.880317        |
 
 3.1) Describe the results. Is the total always zero? Record the average runtime in README.md
@@ -92,7 +89,6 @@ Answer : The code tells that the end of program is to unlock the resource even i
 | #3                      | 10,000,000         | 0               | 0.878716        |
 | #4                      | 10,000,000         | 0               | 0.752102        |
 | #5                      | 10,000,000         | 0               | 0.825334        |
-|:------------------------|:-------------------|-----------------|-----------------|
 | Average                 | 10,000,000         | 0               | 0.829872        |
 
 4.1) Describe the results. Is the total 0? Return the average run time in README.md.
@@ -113,7 +109,6 @@ Answer : No, since it wastes a lot of time in Big-O.
 | #3                      | 10,000,000         | 0               | 0.303126        |
 | #4                      | 10,000,000         | 0               | 0.229715        |
 | #5                      | 10,000,000         | 0               | 0.234974        |
-|:------------------------|:-------------------|-----------------|-----------------|
 | Average                 | 10,000,000         | 0               | 0.275422        |
 
 5.1) Run the program a few times. AtomicCounter does not use a lock (like problem 3) and the add method isn't synchronized, but it still fixes the error in problem 1. Explain why.
