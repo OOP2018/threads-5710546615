@@ -50,7 +50,7 @@ Answer : No, the total are not the same as zero. Because of using the same resou
 How might this affect real applications? <br/>
 Answer : By example.. <br/>
 A - A person who want to withdraw some money. <br/>
-B - A person who want to deposit some money of A's account. <br/><br/>
+B - A person who want to deposit some money of A's account. <br/>
 
 A : Checking his balance 	    --- Balance = 100 THB <br/>
 B : Depositing to A's account   --- Balance = 100 THB <br/>
